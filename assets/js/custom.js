@@ -26,7 +26,7 @@
 
   $(".owl-carousel").owlCarousel({
     items: 4,
-    lazyLoad: false,
+    lazyLoad: true,
     loop: true,
     dots: true,
     margin: 30,
