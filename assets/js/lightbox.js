@@ -14,6 +14,14 @@
 
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
+
+    window.onload = function () {
+        if (!localStorage.justOnce) {
+            localStorage.setItem("justOnce", "true");
+            window.location.reload();
+        }
+    }
+
     if (typeof define === 'function' && define.amd) {
         // AMD. Register as an anonymous module.
         define(['jquery'], factory);

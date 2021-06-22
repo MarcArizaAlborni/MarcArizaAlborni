@@ -11,12 +11,7 @@
     }
   });
 
-    window.onload = function () {
-        if (!localStorage.justOnce) {
-            localStorage.setItem("justOnce", "true");
-            window.location.reload();
-        }
-    }
+   
 
   close.addEventListener("click", function(e) {
     menu.classList.remove("open");
